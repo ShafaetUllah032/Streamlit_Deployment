@@ -39,3 +39,5 @@ st.text("lower part")
 
 st.write("Some raws text , with write options")
 
+st.divider()
+
