@@ -22,9 +22,11 @@ def do_product(x1,x2):
     st.session_state["product"]=x1*x2
 
 def keep(key):
+    # Copy from temporary widget key to permanent key
     st.session_state[key]=st.session_state[f"_{key}"]
 
 def unkeep(key):
+    # Copy from permanent key to temporary widget key
     st.session_state[f"_{key}"]=st.session_state[key]
 
 
@@ -34,7 +36,7 @@ if __name__=="__main__":
 
     with col1:
         unkeep('x1')
-        x1=st.number_input("pick a number", 0 ,10,key="_x1",on_change=keep,args=(('x1',)))
+        x1=st.number_input("pick a number", 0 ,10,key="_x1",on_change=keep,args=(('x1',))) # creating 
     
     with col2:
         unkeep('x2')
