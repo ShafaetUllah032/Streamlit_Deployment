@@ -1,0 +1,17 @@
+cookie:
+  expiry_days: 30
+  key: cookie_signature_key
+  name: cookie_name
+credentials:
+  usernames:
+    jsmith: 
+      email: jsmith@gmail.com
+      name: Jane Smith
+      password: $2b$12$ObM4gCz5KzkhmVsRVgCXI.i8vWZ.0c5k72mUJPd5xLDYFQO7I97ZK
+    mpolo:
+      email: mpolo@gmail.com
+      name: marcopolo
+      password: $2b$12$ObM4gCz5KzkhmVsRVgCXI.i8vWZ.0c5k72mUJPd5xLDYFQO7I97ZK
+preauthorized:
+  emails:
+  - admin@gmail.com
